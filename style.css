@@ -19,7 +19,7 @@
     transition:.2s linear;
 }
 section{
-    padding: 12rem 9%;
+    padding: 6rem 9%;
 }
 html{
     font-size:80%;
@@ -36,7 +36,7 @@ html{
     background: rgba(107, 89, 98, 0.227);
 }
 .heading span{
-    color: pink;
+    color: rgba(224, 49, 78, 0.6);
 }
 .btn{
     display: inline-block;
@@ -221,6 +221,146 @@ header .fa-bars{
     height: 80%;
     width: 80%;
 }
+.products{
+    padding:5rem 10%;
+}
+
+.products .container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:100px;
+}
+
+.products .container .box{
+    width:calc(200% - 50px);
+    border:1px solid rgba(0,0,0,.1);
+    border-radius:6px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    overflow:hidden;
+    background:#fff;
+
+    display:flex;
+    flex-direction:column; /* makes rows inside card */
+}
+
+.products .box .image{
+    position:relativ;
+    width:100%;
+}
+
+.products .box .image img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.products .discount{
+    position:absolute;
+    top:10px;
+    left:10px;
+    color:#000000;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.products .icons{
+    display:flex;
+    background:#ddd8d9;
+}
+
+.products .icons a{
+    flex:1;
+    text-align:center;
+    padding:12px;
+    color:#fff;
+    font-size:16px;
+}
+
+.products .content{
+    padding:15px;
+}
+
+.products .content h3{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.products .price{
+    color:#313030;
+    font-weight:bold;
+}
+
+.products .price span{
+    text-decoration:line-through;
+    color:#999;
+    margin-left:8px;
+}
+
+.review .content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .content .box{
+    flex: 1 1 40rem;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0 , 0.1);
+    border-radius: 6.5rem;
+    padding: 6rem 8rem;
+    position: relative;
+    font-size: 130%;
+    line-height: 200%;
+
+}
+.cartcont{
+position:fixed;
+right:-350px;
+top:130px;
+width:320px;
+background:white;
+border:1px solid #ccc;
+padding:15px;
+transition:0.3s;
+max-height:80vh;
+overflow:auto;
+}
+
+.cartcont.active{
+right:20px;
+}
+
+.cart-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:991px){
 
